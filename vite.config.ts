@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Crypto-trading-tool/", // Replace with your actual repo name
+  base: "/gmgn-crypto-trading-tool/", // This must match your repo name exactly
 });
