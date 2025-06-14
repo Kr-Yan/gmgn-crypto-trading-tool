@@ -46,35 +46,27 @@ const Header: React.FC<HeaderProps> = ({
       {/* Top row with logo, SOL, search, settings, auth buttons */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          {/* Logo with exact green color and purple circle */}
           {/* GMGN Logo - UPDATED SECTION */}
           <div className="relative">
-            <div className="relative">
-              <div className="w-8 h-8 bg-black rounded flex items-center justify-center overflow-hidden">
-                <img
-                  src="/img1.png"
-                  alt="GMGN"
-                  className="w-full h-full object-contain"
-                  style={{
-                    imageRendering: "pixelated",
-                    imageRendering: "-moz-crisp-edges",
-                    imageRendering: "crisp-edges",
-                  }}
-                  onError={(e) => {
-                    // Fallback to frog emoji if image fails to load
-                    e.currentTarget.style.display = "none";
-                    const parent = e.currentTarget.parentElement;
-                    if (parent) {
-                      parent.style.backgroundColor = "#22c55e";
-                      parent.innerHTML =
-                        '<span class="text-white text-lg">🐸</span>';
-                    }
-                  }}
-                />
-              </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-purple-600 rounded-full flex items-center justify-center">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-              </div>
+            <div className="w-8 h-8 bg-black rounded flex items-center justify-center overflow-hidden">
+              <img
+                src="/img1.png"
+                alt="GMGN"
+                className="w-full h-full object-contain"
+                style={{
+                  imageRendering: "pixelated",
+                }}
+                onError={(e) => {
+                  // Fallback to frog emoji if image fails to load
+                  e.currentTarget.style.display = "none";
+                  const parent = e.currentTarget.parentElement;
+                  if (parent) {
+                    parent.style.backgroundColor = "#22c55e";
+                    parent.innerHTML =
+                      '<span class="text-white text-lg">🐸</span>';
+                  }
+                }}
+              />
             </div>
             <div className="absolute -top-1 -right-1 w-4 h-4 bg-purple-600 rounded-full flex items-center justify-center">
               <div className="w-2 h-2 bg-white rounded-full"></div>
