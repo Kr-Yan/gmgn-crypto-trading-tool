@@ -100,11 +100,24 @@ const TrenchesPage: React.FC<TrenchesPageProps> = ({
 
   return (
     <div>
-      {/* Trenches Header */}
-      <div className="flex items-center gap-3 mb-4 px-4">
-        <span className="text-2xl">🏔️</span>
-        <span className="text-white font-bold text-xl">Trenches</span>
-        <ChevronDown className="h-5 w-5 text-gray-400" />
+      <div className="flex items-center">
+        <img
+          src="/trenches-logo.png"
+          alt="Trenches"
+          className="h-8 object-contain"
+          style={{
+            imageRendering: "crisp-edges",
+          }}
+          onError={(e) => {
+            // Fallback to emoji and text if image fails
+            e.currentTarget.style.display = "none";
+            const parent = e.currentTarget.parentElement;
+            if (parent) {
+              parent.innerHTML =
+                '<span class="text-2xl">🏔️</span><span class="text-white font-bold text-xl ml-3">Trenches</span>';
+            }
+          }}
+        />
       </div>
 
       {/* Controls row */}
