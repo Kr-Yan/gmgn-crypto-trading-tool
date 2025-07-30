@@ -4,8 +4,6 @@
 
 A modern, mobile-first cryptocurrency copy trading platform built with React and TypeScript. Discover trending tokens, follow successful traders, and automate your trading strategy.
 
-> **🤖 AI-Powered Development**: This project was built using advanced AI assistance to accelerate development, ensure best practices, and create a production-ready application.
-
 ![GMGN.ai Preview](https://via.placeholder.com/800x400/000000/22c55e?text=GMGN.ai+Copy+Trading+Platform)
 
 ## ✨ Features
